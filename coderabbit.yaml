@@ -1,0 +1,10 @@
+version: 1
+reviews:
+  enable: true
+  languages:
+    - javascript
+    - python
+checks:
+  style: true
+  security: true
+  complexity: true
