@@ -1,9 +1,57 @@
+# ================================
+# Full Version (detailed settings)
+# ================================
 version: 1
+
 reviews:
   enable: true
-  languages:
-    - javascript
-    - python
+  auto_review: true
+  reviewers:
+    - "@team-leads"
+    - "@qa-team"
+
+languages:
+  - javascript
+  - typescript
+  - python
+  - java
+  - csharp
+  - go
+
+checks:
+  style: true
+  security: true
+  complexity: true
+  duplication: true
+  performance: true
+
+thresholds:
+  complexity: 15
+  duplication: 5
+
+pull_requests:
+  min_approvals: 1
+  block_on_fail: true
+  comment_inline: true
+
+notifications:
+  slack: false
+  github: true
+
+
+# ================================
+# Minimal Version (starter config)
+# ================================
+version: 1
+
+reviews:
+  enable: true
+  auto_review: true
+
+languages:
+  - javascript
+  - python
+
 checks:
   style: true
   security: true
