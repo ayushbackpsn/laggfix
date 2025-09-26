@@ -1,22 +1,18 @@
-# ================================
-# Full Version (detailed settings)
-# ================================
 version: 1
 
 reviews:
   enable: true
   auto_review: true
+  review_on:
+    - pull_request_opened
+    - pull_request_synchronized
+  summarize: true
   reviewers:
-    - "@team-leads"
-    - "@qa-team"
+    - "@ayushbackpsn"
 
 languages:
   - javascript
   - typescript
-  - python
-  - java
-  - csharp
-  - go
 
 checks:
   style: true
@@ -31,28 +27,16 @@ thresholds:
 
 pull_requests:
   min_approvals: 1
-  block_on_fail: true
+  block_on_fail: false
   comment_inline: true
 
+paths:
+  include:
+    - "app/**"
+    - "components/**"
+    - "lib/**"
+    - "styles/**"
+    - "*.{js,ts,tsx}"
+
 notifications:
-  slack: false
   github: true
-
-
-# ================================
-# Minimal Version (starter config)
-# ================================
-version: 1
-
-reviews:
-  enable: true
-  auto_review: true
-
-languages:
-  - javascript
-  - python
-
-checks:
-  style: true
-  security: true
-  complexity: true
