@@ -1,6 +1,7 @@
 # CodeRabbit Reviews
 
 [![CodeRabbit Reviews](https://img.shields.io/badge/CodeRabbit-AI%20Code%20Review-4B8BFF)](https://coderabbit.ai)
+//test CodeRabbit
 
 This repository is configured for automated AI code reviews via CodeRabbit.
 
